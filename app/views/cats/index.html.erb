@@ -1,0 +1,6 @@
+<h1>🦃 All the unwanted cats 🐣</h1>
+<ul>
+  <% @kitties.each do |kitty| %>
+    <li><%= render 'cat', cat: kitty, action: :index %></li>
+  <% end %>
+</ul>

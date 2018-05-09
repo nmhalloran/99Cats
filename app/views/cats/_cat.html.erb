@@ -1,0 +1,23 @@
+
+<table>
+  <tr>
+      <th> Name </th>
+      <th> Age </th>
+      <th> Color </th>
+      <th> Sex </th>
+      <th> Description </th>
+  </tr>
+  <tr>
+    <td><%= cat.name %> </td>
+    <td><%= cat.age %> </td>
+    <td><%= cat.color %> </td>
+    <td><%= cat.sex %> </td>
+    <td><%= cat.description %> </td>
+  </tr>
+</table>
+
+<% if action == :show %>
+  <a href="<%= cats_url %>">Go to Index</a>
+<%else%>
+  <a href="<%= cat_url(cat) %>">Check meow-t!!!</a>
+<%end%>
